@@ -1,0 +1,14 @@
+Hey! If you're reading this, you're setting up the Jetson! Yay!
+
+I'm working remotely because of life getting crazy, but YOU can
+help me do this! Follow these steps to get the Jetson 100% game ready.
+
+
+1. Using MobaXterm establish an SFTP session with the Jetson
+2. Copy the JagVision folder over to the Jetson
+3. Establish an SSH session
+4. cd JagVision
+5. chmod +x launch.sh
+6. crontab -e
+7. @reboot /JagVision/launch.sh
+8. You're done!

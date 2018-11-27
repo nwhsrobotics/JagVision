@@ -1,0 +1,13 @@
+[Unit]
+Description=Activate Jagbots Vision System
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=nvidia
+WorkingDirectory=/home/nvidia/JagVision
+ExecStart=/home/nvidia/JagVision/jagvision.py
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
